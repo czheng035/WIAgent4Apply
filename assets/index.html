@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Test</title>
+<intent action="http://webintents.org/pick" type="image/*" href="pick.html"></intent>
+</head>
+<body>
+	<h1 id="example">My First Heading</h1>
+
+	<p>My first paragraph.</p>
+	<input type="button" value="Say hello"
+		onClick="showAndroidToast('Hello Android!')" />
+
+	<script type="text/javascript">
+		function showAndroidToast(toast) {
+			//    	navigator.showToast(toast);
+			//    	alert(navigator.appName);
+			alert(document.getElementsByTagName('html')[0].innerHTML);
+			if(typeof document.getElementsByTagName('intent')==="undefined"){
+				alert('hello');
+			}else{
+				alert('faint');
+			}
+//			alert(document.getElementsByTagName("intent")[0].getAttribute("action"));
+//			var url = link.value;
+//		    var intent = new Intent("http://webintents.org/share", "text/uri-list", url);
+//		    window.navigator.startActivity(intent, function(data) {});
+		}
+	</script>
+</body>
+</html>
