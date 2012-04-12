@@ -3,7 +3,7 @@ All copyrights reserved
 
 Functions:
 Detect window.navigator.startActivity() and display the action and type in its
-intent parameter.
+intent parameter, a process of displaying JavaScript in Android.
 
 Now only work for two links from webintents.org
 
