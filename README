@@ -5,14 +5,19 @@ Functions:
 Detect window.navigator.startActivity() and display the action and type in its
 intent parameter, a process of displaying JavaScript in Android.
 
-Now only work for two links from webintents.org
+Now only work for most pages with webintents invocation on webintents.org.
+Iframe issue listed in last update solved.
 
 http://examples.webintents.org/intents/shorten/shorten.html
+
+http://examples.webintents.org/intents/pick/pick.html
+
+http://examples.webintents.org/intents/share/share.html
 
 http://examples.webintents.org/usage/startActivity/index.html (Home when
 launched)
 
 Not working for other links because their invocations are located in different
-iframes. (Todo)
+iframes. (Solved).
 
-A toast "Ready" shows it has finished page loading for testing.
+Add four buttons "backward", "forward", "refresh", "home"

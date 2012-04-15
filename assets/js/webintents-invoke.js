@@ -1,4 +1,3 @@
-<script type="text/javascript">
 alert('start');
 function Intent(action, type) {
   this.action = action;
@@ -10,4 +9,3 @@ Navigator.prototype.startActivity = function(intent) {
 };
 window.navigator = new Navigator();
 WIService.alert("test_wi");
-</script>

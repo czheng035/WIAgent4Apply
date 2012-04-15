@@ -47,16 +47,16 @@ public class MainActivity extends Activity implements OnClickListener {
 			public void onPageStarted(WebView view, String url, Bitmap favicon) {
 				// TODO Auto-generated method stub
 				super.onPageStarted(view, url, favicon);
-				mWebView.loadUrl("javascript:" +
-						"function Intent(action, type) {" +
-						"	this.action = action;" +
-						"	this.type = type;" +
-						"};" +
-						"function Navigator() {};" +
-						"Navigator.prototype.startActivity = function(intent) {" +
-						"	AndroidNavigator.startActivity(intent.action, intent.type)" +
-						"};" +
-						"window.navigator = new Navigator();");
+//				mWebView.loadUrl("javascript:" +
+//						"function Intent(action, type) {" +
+//						"	this.action = action;" +
+//						"	this.type = type;" +
+//						"};" +
+//						"function Navigator() {};" +
+//						"Navigator.prototype.startActivity = function(intent) {" +
+//						"	AndroidNavigator.startActivity(intent.action, intent.type)" +
+//						"};" +
+//						"window.navigator = new Navigator();");
 			}
 
 			@Override
@@ -82,8 +82,8 @@ public class MainActivity extends Activity implements OnClickListener {
 //						"	AndroidNavigator.startActivity(intent.action, intent.type)" +
 //						"}");
 //				mWebView.loadUrl("javascript:window.navigator.startActivity=AndroidNavigator.startActivity");
-//				mWebView.loadUrl("javascript:registration.register('<html>' + document.getElementsByTagName('html')[0].innerHTML + '</html>', '" + url + "');");
-
+//				mWebView.loadUrl("javascript:registration.showHTML('<html>' + document.getElementsByTagName('html')[0].innerHTML + '</html>');");
+				
 			}    
 			
         });
@@ -92,7 +92,7 @@ public class MainActivity extends Activity implements OnClickListener {
 //        mWebView.loadUrl("javascript:alert(navigator.appName)");
         mWebView.addJavascriptInterface(new Registration(this), "registration");
 //        mWebView.addJavascriptInterface(new Intent(), "window.Intent");
-        mWebView.addJavascriptInterface(new Navigator(), "AndroidNavigator");
+//        mWebView.addJavascriptInterface(new Navigator(), "AndroidNavigator");
 //        String url = "file:///android_asset/index.html";
 //        String js = "javascript:" +
 //        		"xmlhttp = new XMLHttpRequest();" +
@@ -100,7 +100,7 @@ public class MainActivity extends Activity implements OnClickListener {
 //        		"xmlhttp.send()";
 //        mWebView.loadUrl("file:///android_asset/index.html");
 //        mWebView.loadUrl("file:///android_asset/Mememator.html");
-        mWebView.loadUrl("file:///android_asset/startActivity.html");
+        mWebView.loadUrl("http://examples.webintents.org/intents/share/share.html");
 //        mWebView.loadData("<html><body>Hi dude<br><br>Hi again</body></html>", "text/html", "UTF-8");
 //        mWebView.loadUrl("http://www.google.com");
 //        mWebView.loadUrl("http://examples.webintents.org/usage/startActivity/index.html");
