@@ -5,7 +5,7 @@ Functions:
 Detect window.navigator.startActivity() and display the action and type in its
 intent parameter, a process of displaying JavaScript in Android.
 
-Now only work for most pages with webintents invocation on webintents.org.
+Now work for most pages with webintents invocation on webintents.org.
 Iframe issue listed in last update solved.
 
 http://examples.webintents.org/intents/shorten/shorten.html
